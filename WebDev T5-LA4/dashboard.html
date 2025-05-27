@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Up - Dashboard</title>
+ 
+  <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+<body>
+  <div class="dashboard-box">
+    <div class="sidebar">
+      <h2>Users</h2>
+      <ul id="userList">
+        <li>Emerson</li>
+        <li>Jane</li>
+        <li>Alex</li>
+      </ul>
+    </div>
+
+    <div class="chat-section">
+      <div class="chat-header">Welcome to Chat Up</div>
+      <div class="messages" id="chatMessages"></div>
+      <div class="input-area">
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-bar">
+    <button id="logoutBtn">Log out</button>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
